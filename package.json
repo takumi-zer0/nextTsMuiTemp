@@ -1,0 +1,35 @@
+{
+	"name": "nexttemp",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"postbuild": "next-sitemap --config sitemap.config.js",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^6.2.0",
+		"@fortawesome/free-brands-svg-icons": "^6.2.0",
+		"@fortawesome/free-solid-svg-icons": "^6.2.0",
+		"@fortawesome/react-fontawesome": "^0.2.0",
+		"axios": "^0.27.2",
+		"dotenv": "^16.0.3",
+		"firebase": "^9.6.3",
+		"firebase-admin": "^11.3.0",
+		"next": "^12.2.0",
+		"nextjs-google-analytics": "^2.1.0",
+		"nodemailer": "^6.8.0",
+		"nprogress": "^0.2.0",
+		"react": "17.0.2",
+		"react-dom": "17.0.2"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.2",
+		"eslint": "8.6.0",
+		"eslint-config-next": "12.0.8",
+		"next-sitemap": "^3.1.29",
+		"postcss": "^8.4.5",
+		"tailwindcss": "^3.0.13"
+	}
+}

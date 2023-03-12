@@ -1,0 +1,421 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.noscroll::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.arconix-toggle-wrap {
+    @apply border rounded-md border-gray-800 px-5 py-2 my-3 hover:cursor-pointer;
+}
+
+.arconix-toggle-title ::before {
+    @apply inline-block mr-2;
+    content: "\002B";
+    font-style: normal;
+}
+
+.toggle-closed + .arconix-toggle-content {
+    overflow: hidden;
+    height: 0;
+}
+
+.toggle-open + .arconix-toggle-content {
+    @apply pt-4;
+    height: auto;
+}
+
+#toc_container {
+    @apply p-4 m-2 bg-white border border-gray-200 rounded-md;
+}
+
+#toc_container ul ul {
+    @apply ml-4;
+}
+
+#toc_container a {
+    @apply text-slate-800 no-underline;
+    text-decoration: none;
+}
+
+#toc_container li {
+    @apply mt-1 no-underline;
+}
+
+iframe {
+    @apply w-full h-96;
+}
+.aligncenter,
+img {
+    @apply mx-auto;
+}
+
+.article p {
+    @apply pb-3;
+}
+.article th,
+.article td {
+    border: solid 1px; /* 枠線指定 */
+    padding: 0.5em; /* 余白指定 */
+}
+
+.article table {
+    border-collapse: collapse; /* セルの線を重ねる */
+    width: 100%; /* テーブルの幅を100%にする */
+}
+
+.scroll-table,
+.scroll {
+    @apply overflow-x-auto;
+    white-space: nowrap;
+}
+
+.article th,
+.article td {
+    width: 100%;
+    border: 1px solid #d1d1d1;
+}
+
+.article a {
+    @apply text-blue-500 underline hover:text-blue-600;
+}
+
+.toc_title {
+    @apply mb-2 text-lg font-bold border-b;
+}
+
+.toc_list {
+    @apply flex-col text-blue-500 gap-2;
+}
+
+.toc_list :hover {
+    @apply text-blue-600;
+}
+
+.kattene {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+.kattene__imgpart,
+.kattene__imgpart a {
+    @apply flex flex-col items-center;
+    text-align: center;
+}
+
+.kattene__imgpart img {
+    -webkit-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8);
+    -o-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8);
+    -ms-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8);
+    max-width: 40%;
+}
+
+.kattene__description {
+    font-size: 0.8em;
+}
+
+.kattene__btns {
+    width: 100%;
+    margin-top: 1.2em;
+}
+
+.kattene__btns:after {
+    display: block;
+    clear: both;
+    height: 0px;
+    visibility: hidden;
+    content: ".";
+}
+
+.kattene__btns > div {
+    float: left;
+    margin-bottom: 5px;
+}
+
+.kattene__btns .btn {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.kattene__btns.__three > div {
+    width: 32.66667%;
+}
+
+.kattene__btns.__three > div:not(:last-child) {
+    margin-right: 1%;
+}
+
+.kattene__btns.__two > div {
+    width: 49.5%;
+}
+
+.kattene__btns.__two > div:nth-child(odd) {
+    margin-right: 1%;
+}
+
+@media screen and (max-width: 900px) {
+    .kattene__btns.__four > div {
+        width: 49.5%;
+    }
+
+    .kattene__btns.__four > div:nth-child(odd) {
+        margin-right: 1%;
+    }
+
+    .kattene__btns.__one > div {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+@media screen and (min-width: 901px) {
+    .kattene {
+        width: 100%;
+    }
+
+    .kattene__imgpart {
+        display: table-cell;
+        width: 20%;
+    }
+    .kattene__imgpart img {
+        max-width: 100%;
+    }
+
+    .kattene__infopart {
+        @apply md:pl-4;
+        display: table-cell;
+        vertical-align: top;
+        position: relative;
+        width: 80%;
+    }
+
+    .kattene__btns {
+        display: table-cell;
+        position: absolute;
+        bottom: 0;
+        box-sizing: border-box;
+        padding-right: 10px;
+    }
+
+    .kattene__btns.__four > div {
+        width: 24.25%;
+    }
+
+    .kattene__btns.__four > div:not(:last-child) {
+        margin-right: 1%;
+    }
+
+    .kattene__btns.__two > div {
+        width: 49.5%;
+    }
+
+    .kattene__btns.__two > div:not(:last-child) {
+        margin-right: 1%;
+    }
+
+    .kattene__btns.__one > div {
+        width: 49.5%;
+        float: right;
+    }
+}
+
+.btn {
+    word-wrap: break-word;
+}
+
+.btn {
+    appearance: none;
+    background-color: #fff;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    line-height: 1;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    transition: background-color 150ms ease;
+    user-select: none;
+    vertical-align: middle;
+     white-space: nowrap;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #439aa7;
+    color: #fff;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.btn:disabled:hover {
+    background-color: #54c0d1;
+}
+
+.btn.__small {
+    padding: 0.55em;
+    font-size: 0.9em;
+}
+
+.btn.__orange {
+    margin-bottom: 5px;
+    border-radius: 3px;
+    text-align: center;
+    border: solid 3px #ff9901;
+    color: #ff9901;
+}
+
+.btn.__orange:hover {
+    color: #fff;
+    background-color: #ff9901;
+}
+
+.btn.__orange i {
+    font-weight: bold;
+}
+
+.btn.__orange i:before {
+    vertical-align: middle;
+    font-size: 1.2em;
+    margin-right: 0.2em;
+}
+
+.btn.__blue {
+    margin-bottom: 5px;
+    border-radius: 3px;
+    text-align: center;
+    border: solid 3px #007dcd;
+    color: #007dcd;
+}
+
+.btn.__blue:hover {
+    color: #fff;
+    background-color: #007dcd;
+}
+
+.btn.__blue i {
+    font-weight: bold;
+}
+
+.btn.__blue i:before {
+    vertical-align: middle;
+    font-size: 1.2em;
+    margin-right: 0.2em;
+}
+
+.btn.__red {
+    margin-bottom: 5px;
+    border-radius: 3px;
+    text-align: center;
+    border: solid 3px #c20004;
+    color: #c20004;
+}
+
+.btn.__red:hover {
+    color: #fff;
+    background-color: #c20004;
+}
+
+.btn.__red i {
+    font-weight: bold;
+}
+
+.btn.__red i:before {
+    vertical-align: middle;
+    font-size: 1.2em;
+    margin-right: 0.2em;
+}
+
+.btn.__green,
+.__green2 {
+    margin-bottom: 5px;
+    border-radius: 3px;
+    text-align: center;
+    border: solid 3px #0bbd80;
+    color: #0bbd80;
+}
+
+.__green2 {
+    text-decoration: none !important;
+    color: #0bbd80 !important;
+}
+
+.btn.__green:hover,
+.__green2:hover {
+    color: #fff !important;
+    background-color: #0bbd80;
+}
+
+.btn.__green i,
+.__green2 i {
+    font-weight: bold;
+}
+
+.btn.__green i:before,
+.__green2 i:before {
+    vertical-align: middle;
+    font-size: 1.2em;
+    margin-right: 0.2em;
+}
+
+.article h2 {
+    @apply mb-2 text-xl border-blue-500 border-b-4;
+    border-left: 0 none;
+    background: linear-gradient(to right, #f3f3f2 0%, #fff 100%);
+    margin: 50px 0 1.3em;
+    padding: 0.8em;
+    letter-spacing: 1px; /*文字の間隔を少し広く*/
+    position: relative;
+}
+
+.article h3 {
+    @apply border-l-4 border-blue-500 mb-2 pt-2;
+    background: none;
+    line-height: 1.2em;
+    font-size: 22px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+}
+
+.article h4 {
+    padding: 0.25em 0.5em; /*上下 左右の余白*/
+    margin-bottom: 0.2em; /*下の余白*/
+    color: #494949; /*文字色*/
+    background: transparent; /*背景透明に*/
+    border-left: solid 2px #7db4e6; /*左線*/
+}
+
+.article h5 {
+    padding: 0.25em 0.5em; /*上下 左右の余白*/
+    margin-bottom: 0.2em; /*下の余白*/
+    color: #494949; /*文字色*/
+    background: transparent; /*背景透明に*/
+}
+
+.article h6 {
+    padding: 0.25em 0.5em; /*上下 左右の余白*/
+    margin-bottom: 0.2em; /*下の余白*/
+    color: #494949; /*文字色*/
+    background: transparent; /*背景透明に*/
+}
+
+.article p {
+    color: #494949;
+}
+
+/*
+.article strong {
+	background: linear-gradient(transparent 60%, #ffff66 60%);
+}
+*/

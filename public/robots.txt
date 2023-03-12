@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://uguide.jp
+
+# Sitemaps
+Sitemap: https://uguide.jp/sitemap.xml
