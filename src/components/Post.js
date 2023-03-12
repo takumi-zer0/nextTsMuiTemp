@@ -7,6 +7,8 @@ import Suggestions from "./Suggestions";
 import BreadCrumbs from "./BreadCrumbs";
 import PostCard from "./PostCard";
 import Adsense from "./Adsense";
+import Ad from "./Ad";
+import ReactDOM from "react-dom";
 
 function Posts(props) {
     const [data, setData] = useState(props.data);
@@ -44,6 +46,12 @@ function Posts(props) {
                 }
             });
         });
+
+        const tocContainer = document.querySelector("#toc_container");
+        // insert div after tocContainer
+        const newDiv = document.createElement("div");
+        ReactDOM.render(<Ad />, newDiv);
+        tocContainer.after(newDiv);
     }, [data]);
 
     return (
@@ -89,6 +97,8 @@ function Posts(props) {
                             <PostHTML data={data} />
                         </div>
                     )}
+
+                    <Ad></Ad>
 
                     <div className="my-3 border-t ">
                         <h2 className="font-bold">関連記事</h2>
