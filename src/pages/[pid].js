@@ -145,11 +145,7 @@ function Test1({ pid, pageData, type }) {
                 <link rel="icon" href="/logo.png" />
             </Head>
             <main>
-                {type === "post" ? (
-                    <Post pid={pid} data={data.data?.pageBy} />
-                ) : (
-                    <TaisakuList data={data.data?.pageBy} />
-                )}
+                <Post pid={pid} data={data.data?.pageBy} />
             </main>
             <Footer />
         </div>
