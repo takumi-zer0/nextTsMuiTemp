@@ -47,11 +47,11 @@ function Posts(props) {
             });
         });
 
-        const tocContainer = document.querySelector("#toc_container");
-        // insert div after tocContainer
-        const newDiv = document.createElement("div");
-        ReactDOM.render(<Ad />, newDiv);
-        tocContainer.after(newDiv);
+        // const tocContainer = document.querySelector("#toc_container");
+        // // insert div after tocContainer
+        // const newDiv = document.createElement("div");
+        // ReactDOM.render(<Ad />, newDiv);
+        // tocContainer.after(newDiv);
     }, [data]);
 
     return (
@@ -147,6 +147,7 @@ function PostHTML({ data }) {
                 <h1 className="py-3 text-2xl">{data.title}</h1>
                 <p>{data.date}</p>
             </div>
+            <Ad></Ad>
             <div
                 dangerouslySetInnerHTML={{
                     __html: data.content,
