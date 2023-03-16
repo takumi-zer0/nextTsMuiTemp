@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.su-subpages li {
+    @apply ml-5 py-2 list-disc;
+}
+
 .noscroll::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
 }
