@@ -4,29 +4,19 @@ import Script from "next/script";
 function Ad() {
     return (
         <div>
-            {/* <Script id="show-banner" strategy="afterInteractive">
-                {` console.log("AdReplacement");`}
-            </Script> */}
-            <a href="https://amzn.to/3yee3bY">
+            <a href="https://shopclip.jp/wp/wp-content/uploads/2023/03/amazon-coupon2.png">
                 <img
-                    className="aligncenter wp-image-27855 size-full"
-                    src="https://shopclip.jp/wp/wp-content/uploads/2023/02/amazon-coupon1.png"
+                    className="aligncenter size-full wp-image-28773"
+                    src="https://shopclip.jp/wp/wp-content/uploads/2023/03/amazon-coupon2.png"
                     alt=""
-                    width="751"
-                    height="150"
+                    width="926"
+                    height="144"
                 />
             </a>
-            <p
-                className="has-text-align-center"
-                style={{
-                    textAlign: "center",
-                }}
-            >
+            <p className="has-text-align-center" style="text-align: center;">
                 <a
                     className="btn __green"
-                    style={{
-                        width: "100%",
-                    }}
+                    style="width: 100%;"
                     href="https://amzn.to/3yee3bY"
                     target="_blank"
                     rel="noopener noreferrer"
