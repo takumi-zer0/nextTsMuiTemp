@@ -13,10 +13,13 @@ function Ad() {
                     height="144"
                 />
             </a>
-            <p className="has-text-align-center" style="text-align: center;">
+            <p
+                className="has-text-align-center"
+                style={{ textAlign: "center" }}
+            >
                 <a
                     className="btn __green"
-                    style="width: 100%;"
+                    style={{ width: "100%" }}
                     href="https://amzn.to/3yee3bY"
                     target="_blank"
                     rel="noopener noreferrer"
