@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export default function Home() {
     const [test, setTest] = useState<string>();
+    console.log("hello world");
 
     return (
         <div>
