@@ -8,7 +8,7 @@ function Ad() {
             {/* <Script id="show-banner" strategy="afterInteractive">
                 {` console.log("AdReplacement");`}
             </Script> */}
-            <Link href="https://amzn.to/3yee3bY">
+            {/* <Link href="https://amzn.to/3yee3bY">
                 <a href="https://amzn.to/3yee3bY">
                     <img
                         className="aligncenter wp-image-27855 size-full"
@@ -18,26 +18,30 @@ function Ad() {
                         height="150"
                     />
                 </a>
-            </Link>
-            <Link
+            </Link> */}
+            <a href="https://shopclip.jp/wp/wp-content/uploads/2023/03/amazon-coupon2.png">
+                <img
+                    className="aligncenter size-full wp-image-28773 w-full"
+                    src="https://shopclip.jp/wp/wp-content/uploads/2023/03/amazon-coupon2.png"
+                    alt=""
+                    width={926}
+                    height={144}
+                />
+            </a>
+            <p
                 className="has-text-align-center"
-                href="https://amzn.to/3yee3bY"
-                style={{
-                    textAlign: "center",
-                }}
+                style={{ textAlign: "center" }}
             >
                 <a
                     className="btn __green"
-                    style={{
-                        width: "100%",
-                    }}
+                    style={{ width: "100%" }}
                     href="https://amzn.to/3yee3bY"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     最新Amazonクーポンも確認する
                 </a>
-            </Link>
+            </p>
         </div>
     );
 }
