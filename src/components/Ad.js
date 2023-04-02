@@ -19,15 +19,18 @@ function Ad() {
                     />
                 </a>
             </Link> */}
-            <a href="https://shopclip.jp/wp/wp-content/uploads/2023/03/amazon-coupon2.png">
-                <img
-                    className="aligncenter size-full wp-image-28773 w-full"
-                    src="https://shopclip.jp/wp/wp-content/uploads/2023/03/amazon-coupon2.png"
-                    alt=""
-                    width={926}
-                    height={144}
-                />
-            </a>
+
+            <Link href="https://amzn.to/3yee3bY">
+                <a>
+                    <img
+                        className="aligncenter size-full wp-image-28773 w-full"
+                        src="https://shopclip.jp/wp/wp-content/uploads/2023/03/amazon-coupon2.png"
+                        alt=""
+                        width={926}
+                        height={144}
+                    />
+                </a>
+            </Link>
             <p
                 className="has-text-align-center"
                 style={{ textAlign: "center" }}
